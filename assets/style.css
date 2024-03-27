@@ -1,11 +1,11 @@
 h1 {
-    text-align: center;
-    color: white;
-    background-color: blueviolet;
-    text-decoration: underline;
+  text-align: center;
+  color: white;
+  background-color: blueviolet;
+  text-decoration: underline;
 }
 
 .btn {
-    background-color: blueviolet;
-    color: white;
+  background-color: blueviolet;
+  color: white;
 }
