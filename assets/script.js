@@ -26,4 +26,8 @@ $.get(apiUrl)
 function displayWeather(data) {
   var cityName = data.city.name;
   var date = new Date(data.list[0].dt * 1000).toLocaleDateString();
+  var iconUrl = `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`;
+  var temperature = `${Math.round(data.list[0].main.temp)}°C`;
+  var humidity = `Humidity: ${data.list[0].main.humidity}%`;
+  var windSpeed = `Wind Speed: ${data.list[0].wind.speed} m/s`;
 }
