@@ -31,3 +31,12 @@ function displayWeather(data) {
   var humidity = `Humidity: ${data.list[0].main.humidity}%`;
   var windSpeed = `Wind Speed: ${data.list[0].wind.speed} m/s`;
 }
+
+var weatherHTML = `
+      <h2>${cityName}</h2>
+      <p>Date: ${date}</p>
+      <img src="${iconUrl}" alt="Weather Icon">
+      <p>Temperature: ${temperature}</p>
+      <p>${humidity}</p>
+      <p>${windSpeed}</p>
+    `;
