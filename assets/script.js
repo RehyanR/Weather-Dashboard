@@ -71,4 +71,12 @@ $(document).ready(function () {
       displayHistory();
     }
   }
+  function displayHistory() {
+    var history = JSON.parse(localStorage.getItem("weatherHistory")) || [];
+    var historyHTML = "";
+    history.forEach(function (city) {
+      historyHTML += `<div>${city}</div>`;
+    });
+    $("#history").html(historyHTML);
+  }
 });
