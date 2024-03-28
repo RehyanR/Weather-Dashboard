@@ -62,4 +62,12 @@ $(document).ready(function () {
     }
     $("#forecast").html(forecastHTML);
   }
+  function saveToLocalStorage(city) {
+    var history = JSON.parse(localStorage.getItem("weatherHistory")) || [];
+    if (!history.includes(city)) {
+      history.push(city);
+      localStorage.setItem("weatherHistory", JSON.stringify(history));
+      displayHistory();
+    }
+  }
 });
