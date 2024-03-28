@@ -52,4 +52,13 @@ function displayForecast(data) {
     var temperature = `${Math.round(data.list[i].main.temp)}°C`;
     var humidity = `Humidity: ${data.list[i].main.humidity}%`;
   }
+
+  forecastHTML += `
+        <div class="forecast-item">
+          <p>Date: ${date}</p>
+          <img src="${iconUrl}" alt="Weather Icon">
+          <p>Temperature: ${temperature}</p>
+          <p>${humidity}</p>
+        </div>
+      `;
 }
