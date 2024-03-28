@@ -45,7 +45,11 @@ $("#today").html(weatherHTML);
 displayForecast(data);
 
 function displayForecast(data) {
-    var forecastHTML = '<h2>5-Day Forecast</h2>';
-    for (var i = 0; i < data.list.length; i += 8) {
-      var date = new Date(data.list[i].dt * 1000).toLocaleDateString();
-    }}
+  var forecastHTML = "<h2>5-Day Forecast</h2>";
+  for (var i = 0; i < data.list.length; i += 8) {
+    var date = new Date(data.list[i].dt * 1000).toLocaleDateString();
+    var iconUrl = `http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}.png`;
+    var temperature = `${Math.round(data.list[i].main.temp)}°C`;
+    var humidity = `Humidity: ${data.list[i].main.humidity}%`;
+  }
+}
