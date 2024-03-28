@@ -22,3 +22,8 @@ $.get(apiUrl)
       "<p>Failed to retrieve weather data. Please try again later.</p>"
     );
   });
+
+function displayWeather(data) {
+  var cityName = data.city.name;
+  var date = new Date(data.list[0].dt * 1000).toLocaleDateString();
+}
