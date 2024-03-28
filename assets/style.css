@@ -8,4 +8,15 @@ h1 {
 .btn {
   background-color: blueviolet;
   color: white;
+  display: block;
+  margin: auto;
+}
+
+#search-input {
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
 }
