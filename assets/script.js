@@ -12,7 +12,13 @@ function getWeatherData(city) {
 }
 
 $.get(apiUrl)
-      .done(function(data) {
-        displayWeather(data);
-        saveToLocalStorage(city);
-      })
+  .done(function (data) {
+    displayWeather(data);
+    saveToLocalStorage(city);
+  })
+
+  .fail(function () {
+    $("#today").html(
+      "<p>Failed to retrieve weather data. Please try again later.</p>"
+    );
+  });
