@@ -33,7 +33,11 @@ OpenWeatherMap API
 localStorage
 
 ## Screenshot
-i will add my screenshot once ive completed
+
+![View of completed application showing todays forecast and City search hisstory](<assets/images/displaying histoy and forecast.png>)
+![Displaying 5 day weather forecast data](<assets/images/5 day forecast.png>)
+![Error message displayed when data could not be gathered](<assets/images/error message.png>)
+
 
 ## Getting Started
 
