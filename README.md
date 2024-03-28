@@ -43,7 +43,10 @@ Replace {API key} in the base URL with your actual API key.
 Open the index.html file in your web browser to launch the weather dashboard application.
 
 ## Credits
-This application utilises the 5 Day Weather Forecast API provided by OpenWeatherMap.
+
+* This application utilises the 5 Day Weather Forecast API provided by OpenWeatherMap.
+* W3Schools
+* YouTube
 
 ## License
 
