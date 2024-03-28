@@ -12,6 +12,10 @@ h1 {
   margin: auto;
 }
 
+.btn:hover {
+    background-color: black;
+}
+
 #search-input {
     display: block;
     margin: auto;
