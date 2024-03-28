@@ -62,6 +62,7 @@ $(document).ready(function () {
     }
     $("#forecast").html(forecastHTML);
   }
+
   function saveToLocalStorage(city) {
     var history = JSON.parse(localStorage.getItem("weatherHistory")) || [];
     if (!history.includes(city)) {
