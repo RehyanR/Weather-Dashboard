@@ -40,3 +40,6 @@ var weatherHTML = `
       <p>${humidity}</p>
       <p>${windSpeed}</p>
     `;
+
+$("#today").html(weatherHTML);
+displayForecast(data);
