@@ -61,4 +61,5 @@ function displayForecast(data) {
           <p>${humidity}</p>
         </div>
       `;
+  $("#forecast").html(forecastHTML);
 }
